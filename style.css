@@ -147,6 +147,59 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* Core Competencies Section */
+#skills {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.skill-box {
+    background: linear-gradient(to bottom, #001f4d, #005f8b);
+    border: 2px solid #4f9bc1;
+    border-radius: 12px;
+    padding: 30px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box h4 {
+    font-size: 20px;
+    color: #4f9bc1;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.skill-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+.skills-grid:hover .skill-box {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Portfolio */
 .portfolio-grid {
     display: grid;
